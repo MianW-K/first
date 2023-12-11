@@ -1,0 +1,265 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ body {
+    background-image: url(/image/stefan-cosma-GVlcXhQejA8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+
+}
+/* .right {
+    position: absolute;
+    right: 34px;
+    top: 43px;
+     display: inline-block;
+} */
+.left{
+    display: inline-block;
+    position: absolute;
+    right: 27px;
+    top: 26px;
+    padding: 4px;
+    color: white;
+    border: 3px solid #ea640c;
+    border-radius: 10px;
+    border-block-style: unset;
+}
+.mid {
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    text-align: center;
+    margin: 29px auto;
+    background: rgba(3, 3, 3, 0.808);
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 17px;
+    font-size: 21px;
+    border-bottom: #ea640c 1px outset;
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+}
+.right{
+    top: 27px;
+    position: absolute;
+     margin: 0px 9px;
+    background-color: rgb(0 0 0 / 0%);
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid #ea640c;
+    border-block-style: unset;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.contect ul li{
+    color: rgb(255, 253, 253);
+    list-style: none;
+    margin: 26px 0px;
+
+
+}
+.contect ul {
+    color: rgb(255, 251, 251);
+    list-style: none;
+    width: 101px;
+    background-color:black;
+    border-radius: 13px;
+    height: 250px;
+    padding: 9px;
+    cursor: auto;
+}
+
+.chek {
+    position: absolute;
+    left: -590px;
+    background-color: #3a4f60;
+    width: 240px;
+    border-radius: 14px;
+    /* padding: 10px; */
+    /* display: block; */
+    /* margin: 10px auto; */
+    /* width: 500px; */
+    /* text-align: center; */
+    /* border-left: 12px; */
+    /* border-right: 12px; */
+    border-color: #78a7af;
+    border-style: outset;
+    color: lavenderblush;
+    transition: all 0.3s ease;
+}
+.chek ul li{
+ padding: 5px 9px;
+}
+
+
+.bx-menu {
+    color: white;
+    margin: 0px 15px;
+    font-size: 27px
+}
+
+.navbar li:hover {
+cursor: pointer;
+background-color: #ea640c;
+border-radius: 15px;
+box-shadow:0 0 15px #fffcfc;
+}
+.bx-menu:hover {
+    cursor: pointer
+}
+
+.con:hover{
+    cursor:pointer;
+    padding: 0px 3px;
+    border-radius: 13px;
+    box-shadow:0 0 15px #ea640c;
+}
+.bx-x:hover{
+    cursor: pointer;
+}
+.se:hover {
+    cursor: pointer;
+}
+.contect ul li:hover{
+    cursor: pointer;
+border-radius: 13px;
+padding-left: 1px;
+box-shadow:0 0 15px #ea640c;
+}
+.serv {
+    color: white;
+    position: absolute;
+    left: -400px;
+    margin: 0px 0px;
+
+    border-radius: 10px;
+    /* box-shadow: 0 0 6px #ffffff96; */
+    transition: all 0.4s ease;
+}
+.serv li {
+    color: white;
+    position: flex;
+    margin: 10px;
+    padding: 0px 9px;
+    text-align: center;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #ffffff96;
+    transition: all 0.4s ease;
+}
+.aba{
+    opacity: 0;
+}
+
+
+.se {
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+
+.bx-x{
+    color: white;
+
+}
+.id {
+    position: absolute;
+    left: 217px;
+    font-size: 23px;
+    bottom: 251px;
+}
+.contect{
+    position: absolute;
+    left: -900px;
+    top: 30px;
+    transition: all 0.4s ease;
+}
+
+
+
+#ok {
+    display: none;
+}
+#done {
+    display: none;
+}
+#open{
+    display: none;
+}
+#ook{
+    display: none;
+}
+
+#done:checked~.serv {
+    left: 0px;
+}
+#ok:checked~.serv{
+    opacity: 0;
+}
+#ok:checked~.chek {
+    left: 0px;
+}
+#open:checked ~.contect{
+    left: 0px;
+    top: 30px;
+}
+@media (max-width:700px){
+    .navbar{
+        opacity: 0;
+    }
+    .serv li {
+        color: white;
+        position: flex;
+        margin: 10px;
+        padding: 0px 9px;
+        text-align: center;
+        list-style: none;
+        border-radius: 10px;
+        box-shadow: 0 0 6px #ffffff96;
+        transition: all 0.4s ease;
+    }
+    .aba{
+        opacity: 1;
+    }
+    .left{
+        display: flex;
+        justify-content: center; 
+        text-align: center;
+        /* right:130px;
+        top: 29px; */
+        /* background-color: blue; */
+        padding: 5px;
+        color: white;
+        border: 3px solid #ea640c;
+        border-radius: 10px;
+        border-block-style: unset;
+    }
+    .right{
+        top: 82px;
+    right: 1px ;
+        position: absolute;
+         margin: 0px 9px;
+        background-color: rgb(0 0 0 / 0%);
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid #ea640c;
+        border-block-style: unset;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+}
+
